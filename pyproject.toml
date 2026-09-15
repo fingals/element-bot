@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "element-bot"
+version = "0.1.0"
+package-mode = false
+description = "Element/Matrix message ingestion and persistence service"
+authors = ["Signal Platform Team"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.0"
+asyncpg = "^0.29"
+fastapi = "^0.104"
+uvicorn = "^0.24"
+matrix-nio = "^0.25"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
